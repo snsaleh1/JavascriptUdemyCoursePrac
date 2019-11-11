@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Functions with closures</title>
+    <script>
+
+    var y = 50;
+
+    function fun(){
+        var x =20;
+        document.write("Inside fun X: "+x+"<br/>");
+    }
+    function fun2(){
+        var a =20;
+        document.write("Inside fun2 a: "+a+"<br/>");
+    }
+
+    fun();
+    fun2();
+    //x can only be used within the above function. the statement below will not display
+
+    document.write("Outside fun X: "+ x);
+    document.write("Outside fun Y: "+ y);
+    //document is an object, everything is an object
+    </script>
+</head>
+<body>
+</body>
+
+</html>
