@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>onmouseover/onmouseout</title>
+    <script>
+    function handleMouseOverEvent(x) {
+        x.style.color = "red";
+        x.style.backgroundColor="yellow";
+        x.innerHTML = "MOUSEOVER";
+    }
+    function handleMouseOutEvent(y) {
+        y.style.color = "yellow";
+        y.style.backgroundColor="blue";
+        y.innerHTML = "MOUSEOut";
+    }
+
+    //document is an object, everything is an object
+    </script>
+</head>
+<body>
+    <p onmouseover="handleMouseOverEvent(this)" onmouseout="handleMouseOutEvent(this)">Mouse over/Mouse out</p>
+</body>
+
+</html>
